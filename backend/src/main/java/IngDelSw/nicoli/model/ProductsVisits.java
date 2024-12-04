@@ -18,34 +18,34 @@ import javax.persistence.Table;
 public class ProductsVisits {
 	@Id
 	@Column(name = "id")
-	private int id;
+	private Integer id;
 	/**
 	 * 
 	 */
 	@Column(name = "visit_id")
-	private int visit_id;
+	private Integer visit_id;
 	/**
 	 * 
 	 */
 	@Column(name = "product_id")
-	private int product_id;
+	private Integer product_id;
 
 	/**
 	 * GETTERS AND SETTERS
 	 */
-	public int getVisit_id() {
+	public Integer getVisit_id() {
 		return visit_id;
 	}
 
-	public void setVisit_id(int visit_id) {
+	public void setVisit_id(Integer visit_id) {
 		this.visit_id = visit_id;
 	}
 
-	public int getProduct_id() {
+	public Integer getProduct_id() {
 		return product_id;
 	}
 
-	public void setProduct_id(int product_id) {
+	public void setProduct_id(Integer product_id) {
 		this.product_id = product_id;
 	}
 }

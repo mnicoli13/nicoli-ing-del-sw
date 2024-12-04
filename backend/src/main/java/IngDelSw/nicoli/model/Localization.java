@@ -7,42 +7,29 @@ package IngDelSw.nicoli.model;
 
 import IngDelSw.nicoli.model.enums.Gender;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.*;
 
-/**
- * 
- */
 @Entity
 @Table(name = "localization")
 public class Localization {
 
-	/**
-	 * 
-	 */
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+
 	@Column(name = "name")
 	private String name;
-	/**
-	 * 
-	 */
+
 	@Id
 	@Column(name = "localization_id")
-	private int localization_id;
-	/**
-	 * 
-	 */
+	private Integer localizationId;
+
 	@Column (name = "gender")
 	private Gender gender;
-	/**
-	 * 
-	 */
+
 	@Column(name = "description")
 	private String description;
-	/**
-	 * 
-	 */
+
 
 	public String getName() {
 		return name;
@@ -52,12 +39,12 @@ public class Localization {
 		this.name = name;
 	}
 
-	public int getLocalization_id() {
-		return localization_id;
+	public Integer getLocalizationId() {
+		return localizationId;
 	}
 
-	public void setLocalization_id(int localization_id) {
-		this.localization_id = localization_id;
+	public void setLocalizationId(Integer localization_id) {
+		this.localizationId = localization_id;
 	}
 
 	public Gender getGender() {

@@ -4,49 +4,57 @@
 
 /************************************************************/
 package IngDelSw.nicoli.model;
+import IngDelSw.nicoli.model.enums.Gender;
+import IngDelSw.nicoli.model.enums.Role;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 /**
- * 
+ *
  */
+@Entity
 public class Patient extends User {
-	/**
-	 * 
-	 */
-	private int created_by;
-	/**
-	 * 
-	 */
-	private LocalDate date_of_birth;
-	/**
-	 * 
-	 */
+
+	@Column(name = "created_by")
+	private Integer createdBy;
+	@Column(name = "date_of_birth")
+	private LocalDate dateOfBirth;
+	@Column(name = "ethnicity")
 	private String ethnicity;
-	/**
-	 * 
-	 */
-	private String previous_history;
-	/**
-	 * 
-	 */
-	private Visit[] visit;
+	@Column(name = "previous_history")
+	private String previousHistory;
+
+	public Patient() {
+
+	}
+
+	public Patient(String firstName, String lastName, String email, String password, Integer createdBy, LocalDate dateOfBirth, String ethnicity, String previous_history, Gender gender, Role role, LocalDateTime activated_at) {
+		super(firstName, lastName, email, password, gender, role, activated_at);
+		this.createdBy = createdBy;
+		this.dateOfBirth = dateOfBirth;
+		this.ethnicity = ethnicity;
+		this.previousHistory = previous_history;
+	}
 
 	/**
 	 * GETTERS AND SETTERS
 	 */
-	public int getCreated_by() {
-		return created_by;
+	public Integer getCreatedBy() {
+		return createdBy;
 	}
 
-	public void setCreated_by(int created_by) {
-		this.created_by = created_by;
+	public void setCreatedBy(Integer createdBy) {
+		this.createdBy = createdBy;
 	}
 
-	public LocalDate getDate_of_birth() {
-		return date_of_birth;
+	public LocalDate getDateOfBirth() {
+		return dateOfBirth;
 	}
 
-	public void setDate_of_birth(LocalDate date_of_birth) {
-		this.date_of_birth = date_of_birth;
+	public void setDateOfBirth(LocalDate dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
 	}
 
 	public String getEthnicity() {
@@ -57,19 +65,12 @@ public class Patient extends User {
 		this.ethnicity = ethnicity;
 	}
 
-	public String getPrevious_history() {
-		return previous_history;
+	public String getPreviousHistory() {
+		return previousHistory;
 	}
 
-	public void setPrevious_history(String previous_history) {
-		this.previous_history = previous_history;
+	public void setPreviousHistory(String previous_history) {
+		this.previousHistory = previous_history;
 	}
 
-	public Visit[] getVisit() {
-		return visit;
-	}
-
-	public void setVisit(Visit[] visit) {
-		this.visit = visit;
-	}
 }

@@ -21,12 +21,12 @@ public class Photos {
 	 */
 	@Id
 	@Column(name = "id")
-	private int id;
+	private Integer id;
 	/**
 	 * 
 	 */
 	@Column(name = "visit_id")
-	private int visit_id;
+	private Integer visit_id;
 	/**
 	 * 
 	 */
@@ -36,7 +36,7 @@ public class Photos {
 	 * 
 	 */
 	@Column(name = "localization_view_id")
-	private int localization_view_id;
+	private Integer localization_view_id;
 	/**
 	 * 
 	 */
