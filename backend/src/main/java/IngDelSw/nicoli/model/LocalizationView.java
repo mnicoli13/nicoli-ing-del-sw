@@ -18,12 +18,12 @@ import javax.persistence.Table;
 public class LocalizationView {
 	@Id
 	@Column(name = "id")
-	private int id;
+	private Integer id;
 	/**
 	 * 
 	 */
 	@Column(name = "location_id")
-	private int location_id;
+	private Integer localizationId;
 
 	/**
 	 * 
@@ -34,7 +34,7 @@ public class LocalizationView {
 	 * 
 	 */
 	@Column(name = "order")
-	private int order;
+	private Integer order;
 
 
 	/**
@@ -43,19 +43,19 @@ public class LocalizationView {
 	public void localizations() {
 	}
 
-	public int getLocation_id() {
-		return location_id;
+	public Integer getLocalizationId() {
+		return localizationId;
 	}
 
-	public void setLocation_id(int location_id) {
-		this.location_id = location_id;
+	public void setLocalizationId(Integer localizationId) {
+		this.localizationId = localizationId;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -67,11 +67,11 @@ public class LocalizationView {
 		this.name = name;
 	}
 
-	public int getOrder() {
+	public Integer getOrder() {
 		return order;
 	}
 
-	public void setOrder(int order) {
+	public void setOrder(Integer order) {
 		this.order = order;
 	}
 

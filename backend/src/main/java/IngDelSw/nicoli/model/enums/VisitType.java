@@ -5,8 +5,8 @@
 /************************************************************/
 package IngDelSw.nicoli.model.enums;
 
-public enum Role {
-	User,
-	Admin,
-	Medic;
+public enum VisitType {
+	Baseline,
+	Trattamento,
+	Controllo;
 }
