@@ -16,10 +16,12 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfig {
+public class SecurityConfig implements WebMvcConfigurer {
 
     private final UserService userService;
     private final JwtUtil jwtUtil;
@@ -33,15 +35,16 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(csrf -> csrf.disable())
+                .cors(cors -> cors.disable()) // Abilita la configurazione CORS
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/login").permitAll() // Permette l'accesso alla login senza autenticazione
+                        .requestMatchers("/api/auth/register/medic").permitAll()
                         .requestMatchers("/h2-console/**").permitAll()
                         .requestMatchers("/api/admin/allUsers").permitAll()
                         .requestMatchers("/api/patient/store").permitAll()
                         .requestMatchers("/api/patient/**").permitAll()
                         .requestMatchers("/api/patient/delete/**").permitAll()
                         .requestMatchers("/api/treatment/**").permitAll()
-                        .requestMatchers("/api/auth/register").permitAll()
                         .anyRequest().authenticated() // Richiede autenticazione per tutte le altre richieste
                 )
                 .headers(headers -> headers
@@ -63,6 +66,13 @@ public class SecurityConfig {
         authenticationManagerBuilder.userDetailsService(userService); // Usa il servizio per la gestione degli utenti
         return authenticationManagerBuilder.build();
     }
+    
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**").allowedMethods("*");
+    }
+
+
 
     @Bean
     public PasswordEncoder passwordEncoder() {

@@ -3860,3 +3860,133 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: /Users/matteonic
 	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
 	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
 	... 138 more
+2024-12-05 18:41:09.301477+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 18:51:50.399597+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 18:52:00.138005+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 18:52:21.426305+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 18:53:11.456322+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 18:57:30.505571+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 18:57:39.377180+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 18:59:37.660835+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 19:06:40.593244+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 19:06:48.600766+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 19:13:28.306362+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 19:17:18.208279+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]
+2024-12-05 19:20:01.660140+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table localization_view (\000a        id integer not null,\000a        location_id integer,\000a        name varchar(255),\000a        [*]order integer,\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table localization_view (
+        id integer not null,
+        location_id integer,
+        name varchar(255),
+        order integer,
+        primary key (id)
+    ) [42001-224]

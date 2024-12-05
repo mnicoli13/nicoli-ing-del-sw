@@ -1,3 +1,7 @@
 node_modules
 dist
 .idea/
+target/
+.git
+.project
+vcs.xml

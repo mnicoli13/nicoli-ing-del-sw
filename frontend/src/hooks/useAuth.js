@@ -12,7 +12,7 @@ const initialState = {
 };
 
 const register = async (email, password) => {
-  const res = await axios.post("/auth/register", {
+  const res = await axios.post("/auth/register/medic", {
     email,
     password,
   });
